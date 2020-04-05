@@ -1,6 +1,6 @@
 import { PluginObj, types } from "@babel/core"
 
-interface IState {
+export interface IState {
 	internalNames: string[]
 }
 

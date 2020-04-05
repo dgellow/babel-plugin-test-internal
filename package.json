@@ -1,9 +1,10 @@
 {
   "name": "babel-plugin-test-internal",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "build": "tsc",
     "test": "jest"
   },
   "devDependencies": {
