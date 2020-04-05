@@ -1,0 +1,21 @@
+{
+  "name": "babel-plugin-test-internal",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-typescript": "^7.9.0",
+    "@types/babel-core": "^6.25.6",
+    "@types/jest": "^25.2.1",
+    "@types/node": "^13.11.0",
+    "babel-plugin-tester": "^9.0.0",
+    "jest": "^25.2.7",
+    "ts-jest": "^25.3.1",
+    "typescript": "^3.8.3"
+  }
+}

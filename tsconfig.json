@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+		"allowJs": true,
+		"declaration": false,
+		// "esModuleInterop": true,
+		"module": "commonjs",
+		"noImplicitAny": true,
+		"noImplicitReturns": true,
+		"noImplicitThis": true,
+		"noUnusedLocals": true,
+		"outDir": "dist/lib",
+		"strict": true,
+		"target": "es6",
+	},
+	"exclude": [
+		"node_modules",
+		"dist",
+	]
+}
