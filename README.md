@@ -16,18 +16,18 @@ $ yarn add -D babel-plugin-test-internal
 // configuration example
 
 module.exports = api => {
-	//  1. 👇 are we in a test context?
-	const isTest = api.env('test')
-	// 2. if yes, then register the plugin 👇
-	const plugins = isTest ? ["test-internal"]: []
+  //  1. 👇 are we in a test context?
+  const isTest = api.env('test')
+  // 2. if yes, then register the plugin 👇
+  const plugins = isTest ? ["test-internal"]: []
 
   return {
-	presets: [
-	"@babel/preset-env",
-	"@babel/preset-typescript",
-	"@babel/preset-react",
+  presets: [
+  "@babel/preset-env",
+  "@babel/preset-typescript",
+  "@babel/preset-react",
   ],
-	plugins, // 👈  3. don't forget to add the plugins property to the configuration object
+  plugins, // 👈  3. don't forget to add the plugins property to the configuration object
   }
 }
 ```
@@ -39,9 +39,9 @@ module.exports = api => {
 import {__internal__} from "./your-file"
 
 test("testing some internal things", () => {
-	const expected = ...
-	// 2. 👇 use the properties you need
-	assert(__internal__.doSomething(), expected)
+  const expected = ...
+  // 2. 👇 use the properties you need
+  assert(__internal__.doSomething(), expected)
 })
 ```
 
@@ -63,23 +63,23 @@ $ yarn add -D typescript-plugin-test-internal
 var testInternalTranformer = require('typescript-plugin-test-internal').default;
 
 module.exports = {
-	mode: 'development',
-	entry: './index.ts',
-	module: {
-		rules: [
-			{
-				test: /\.ts$/,
-				loader: 'ts-loader',
-				options: { // 👈 2. add ts-loader 'options' object
-					// 3. 👇 add the method 'getCustomTransformers'
-					getCustomTransformers: program => ({
-						// 4. register the plugin 👇
-						before: [uppercaseStringLiteralTransformer]
-					})
-				}
-			}
-		]
-	}
+  mode: 'development',
+  entry: './index.ts',
+  module: {
+    rules: [
+      {
+        test: /\.ts$/,
+        loader: 'ts-loader',
+        options: { // 👈 2. add ts-loader 'options' object
+          // 3. 👇 add the method 'getCustomTransformers'
+          getCustomTransformers: program => ({
+            // 4. register the plugin 👇
+            before: [uppercaseStringLiteralTransformer]
+          })
+        }
+      }
+    ]
+  }
 }
 ```
 
@@ -90,9 +90,9 @@ module.exports = {
 import {__internal__} from "./your-file"
 
 test("testing some internal things", () => {
-	const expected = ...
-	// 2. use properties you need 👇
-	assert(__internal__.doSomething(), expected)
+  const expected = ...
+  // 2. use properties you need 👇
+  assert(__internal__.doSomething(), expected)
 })
 ```
 
