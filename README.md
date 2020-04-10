@@ -102,6 +102,13 @@ test("testing some internal things", () => {
 
 ## Development
 
+Install dependencies and test everything
+
+```
+$ yarn workspaces run install
+$ yarn workspcaes run test
+```
+
 ### Babel plugin
 
 ```
