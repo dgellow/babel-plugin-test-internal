@@ -1,9 +1,37 @@
 {
   "name": "typescript-plugin-test-internal",
-  "version": "0.0.0",
-  "main": "index.js",
+  "version": "0.0.1",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dgellow/plugin-test-internal.git"
+  },
+  "keywords": [
+    "typescript-plugin",
+    "typescript-transformer",
+    "typescript-compiler-extension"
+  ],
+  "author": "Samuel El-Borai <samuel.elborai@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/dgellow/plugin-test-internal/issues"
+  },
+  "homepage": "https://github.com/dgellow/plugin-test-internal",
+  "type": "module",
+  "main": "./dist/index.js",
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "clean": "tsc --build --clean",
+    "build": "yarn clean && tsc",
+    "prepublish": "yarn build",
+    "test": "yarn build && node ./dist/test/index.test.js"
+  },
   "devDependencies": {
+    "@types/diff": "^4.0.2",
+    "@types/node": "^13.11.1",
+    "diff": "^4.0.2",
+    "neocolor": "^2.1.1",
+    "tesuto": "^2.1.1",
     "typescript": "^3.8.3"
   }
 }
