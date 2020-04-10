@@ -1,4 +1,8 @@
-# `test-internal` plugin for Babel [![npm version](https://badge.fury.io/js/babel-plugin-test-internal.svg)](https://badge.fury.io/js/babel-plugin-test-internal) and Typescript [![npm version](https://badge.fury.io/js/typescript-plugin-test-internal.svg)](https://badge.fury.io/js/typescript-plugin-test-internal)
+# Test the internals of a JS or TS module
+
+Available as:
+- a babel plugin [![npm version](https://badge.fury.io/js/babel-plugin-test-internal.svg)](https://badge.fury.io/js/babel-plugin-test-internal)
+- a typescript compiler extension [![npm version](https://badge.fury.io/js/typescript-plugin-test-internal.svg)](https://badge.fury.io/js/typescript-plugin-test-internal)
 
 ## Usage
 
@@ -18,7 +22,7 @@ $ yarn add -D babel-plugin-test-internal
 module.exports = api => {
   //  1. 👇 are we in a test context?
   const isTest = api.env('test')
-  // 2. if yes, then register the plugin 👇
+  // 2. if yes register the plugin 👇
   const plugins = isTest ? ["test-internal"]: []
 
   return {
