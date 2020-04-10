@@ -6,7 +6,6 @@ import plugin from "../index"
 pluginTester({
 	plugin,
 	fixtures: join(__dirname, "fixtures"),
-	endOfLine: "auto",
 	babelOptions: {
 		generatorOpts: {
 			comments: false,
