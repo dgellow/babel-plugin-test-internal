@@ -1,4 +1,4 @@
-# Test the internals of a JS or TS module
+# Test the internals of a JS or TS module [![Build Status](https://travis-ci.org/dgellow/plugin-test-internal.svg?branch=master)](https://travis-ci.org/dgellow/plugin-test-internal)
 
 Available as
 - a babel plugin [![npm version](https://badge.fury.io/js/babel-plugin-test-internal.svg)](https://badge.fury.io/js/babel-plugin-test-internal)
