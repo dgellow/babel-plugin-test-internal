@@ -1,6 +1,6 @@
 # Test the internals of a JS or TS module
 
-Available as:
+Available as
 - a babel plugin [![npm version](https://badge.fury.io/js/babel-plugin-test-internal.svg)](https://badge.fury.io/js/babel-plugin-test-internal)
 - a typescript compiler extension [![npm version](https://badge.fury.io/js/typescript-plugin-test-internal.svg)](https://badge.fury.io/js/typescript-plugin-test-internal)
 
@@ -44,7 +44,7 @@ import {__internal__} from "./your-file"
 
 test("testing some internal things", () => {
   const expected = ...
-  // 2. 👇 use the properties you need
+  // 2. use properties you need 👇
   assert(__internal__.doSomething(), expected)
 })
 ```
