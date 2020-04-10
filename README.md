@@ -64,7 +64,7 @@ $ yarn add -D typescript-plugin-test-internal
 // configuration example
 
 // 👇 1. import the plugin
-var testInternalTranformer = require('typescript-plugin-test-internal').default;
+const testInternalTranformer = require('typescript-plugin-test-internal').default;
 
 module.exports = {
   mode: 'development',
@@ -78,7 +78,7 @@ module.exports = {
           // 3. 👇 add the method 'getCustomTransformers'
           getCustomTransformers: program => ({
             // 4. register the plugin 👇
-            before: [uppercaseStringLiteralTransformer]
+            before: [testInternalTransformer(program)]
           })
         }
       }
