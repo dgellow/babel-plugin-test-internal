@@ -1,0 +1,9 @@
+{
+  "name": "typescript-plugin-test-internal",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^3.8.3"
+  }
+}
