@@ -8,5 +8,9 @@
   ],
   "repository": "git@github.com:dgellow/plugin-test-internal.git",
   "author": "Samuel El-Borai <samuel.elborai@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn workspaces run build",
+    "test": "yarn workspaces run test"
+  }
 }

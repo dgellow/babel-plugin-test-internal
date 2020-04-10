@@ -102,16 +102,18 @@ test("testing some internal things", () => {
 
 ## Development
 
-Install dependencies and test everything
+Install all dependencies, build and test everything
 
-```
-$ yarn workspaces run install
-$ yarn workspcaes run test
+```sh
+# from the project root
+$ yarn install
+$ yarn build
+$ yarn test
 ```
 
 ### Babel plugin
 
-```
+```sh
 $ cd ./babel
 $ yarn install
 $ yarn test
@@ -120,7 +122,7 @@ $ yarn build
 
 ### Typescript plugin
 
-```
+```sh
 $ cd ./typescript
 $ yarn install
 $ yarn test
